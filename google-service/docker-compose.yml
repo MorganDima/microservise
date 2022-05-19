@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+  backend:
+    image: "morgandima87/google-service:latest"
+    restart: always

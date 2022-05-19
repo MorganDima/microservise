@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: rentme-service
+
+server:
+  port: 15000
+
+  zipkin:
+    base-url: http://zipkin:9411
+
+#  rabbitmq:
+#    address: rabbitmq:5672
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+

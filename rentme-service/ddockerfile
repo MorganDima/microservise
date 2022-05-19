@@ -1,0 +1,9 @@
+FROM openjdk
+
+EXPOSE 65656
+
+ADD target/main-backend-part.jar main-backend-part.jar
+
+ENTRYPOINT ["java", "-jar", "main-backend-part.jar"]
+
+ENV TZ Europe/Israel
